@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<GameData>
+    <BaseGameText>
+        
+		<Row Tag="LOC_FT_WINDOW_TITLE">
+			<Text>COUNTER</Text>
+		</Row>
+		<Row Tag="LOC_FT_WINDOW_NOTE">
+			<Text>Current available amount: {1_Amount}[ICON_GoldLarge]</Text>
+		</Row>
+		<Row Tag="LOC_FT_ENTRY_BUTTON">
+			<Text>FINANCE</Text>
+		</Row>
+		<Row Tag="LOC_FT_ENTRY_BUTTON_TOOLTIP">
+			<Text>Finance[NEWLINE][NEWLINE]Unleash the power of capital and let your empire rise quickly through the chaos.</Text>
+		</Row>
+		<Row Tag="LOC_LOAN_TURNS_REMAIN">
+			<Text>Turns remain</Text>
+		</Row>
+		<Row Tag="LOC_LOAN_AMOUNT_LABEL">
+			<Text>Loan amount: </Text>
+		</Row>
+		<Row Tag="LOC_LOAN_PAYABLE_LABEL">
+			<Text>Payable: {1_Amount}[ICON_Gold][NEWLINE]About {2_PerTurn} per turn.</Text>
+		</Row>
+		<Row Tag="LOC_LOAN_LOAN_BUTTON">
+			<Text>LOAN</Text>
+		</Row>
+		<Row Tag="LOC_LOAN_PAY_BUTTON">
+			<Text>PAY</Text>
+		</Row>
+		<Row Tag="LOC_LOAN_EARLY_REPAYMENT_TOOLTIP">
+			<Text>Early repayment pays less interest.</Text>
+		</Row>
+		<Row Tag="LOC_LOAN_NEW_LOAN_BUTTON">
+			<Text>NEW LOAN</Text>
+		</Row>
+		<Row Tag="LOC_LOAN_INTEREST_RATES">
+			<Text>rate</Text>
+		</Row>
+		<Row Tag="LOC_LOAN_INTEREST_LABEL">
+			<Text>Interest: </Text>
+		</Row>
+		<Row Tag="LOC_LOAN_INTEREST_RATES_TOOLTIP">
+			<Text>Loan term and interest rate.</Text>
+		</Row>
+		<Row Tag="LOC_USURIOUS_LOAN_TAB">
+			<Text>Usury</Text>
+		</Row>
+		<Row Tag="LOC_FREE_LOAN_TAB">
+			<Text>Free Loan</Text>
+		</Row>
+		<Row Tag="LOC_FREE_LOAN_NOTE">
+			<Text>The loan processed in this window does not need to be repaid, but every time you receive a loan, other players will receive double the income.</Text>
+		</Row>
+		<Row Tag="LOC_FREE_LOAN_OTHER_PLAYERS_RECEIVE">
+			<Text>Each other player got {1_Amount} [ICON_Gold]</Text>
+		</Row>
+		<Row Tag="LOC_VAM_TAB">
+			<Text>VAM</Text>
+		</Row>
+		<Row Tag="LOC_VAM_NOTE">
+			<Text>TO BE CONTINUE ...</Text>
+		</Row>
+		<Row Tag="LOC_LOAN_OVERDUE">
+			<Text>Overdue</Text>
+		</Row>
+		<Row Tag="LOC_LOAN_ARREAR">
+			<Text>Arrear: {1_Amount}</Text>
+		</Row>
+		<Row Tag="LOC_FT_ACCOUNT_CANNOT_AFFORD">
+			<Text>You don't have enough gold right now.</Text>
+		</Row>
+		
+		
+		<Row Tag="LOC_VICTORY_ECONOMIC_NAME">
+			<Text>Economic Victory</Text>
+		</Row>
+		<Row Tag="LOC_VICTORY_ECONOMIC_SHORTNAME">
+			<Text>Economy</Text>
+		</Row>
+		<Row Tag="LOC_VICTORY_ECONOMIC_BLURB">
+			<Text>Congratulations for winning the economic victory!</Text>
+		</Row>
+		<Row Tag="LOC_VICTORY_ECONOMIC_DESCRIPTION">
+			<Text>Try to increase the gold yield of each turn as much as possible to achieve economic victory.</Text>
+		</Row>
+		<Row Tag="LOC_VICTORY_ECONOMIC_REQUIREMENT">
+			<Text>Whoever earns more money wins.</Text>
+		</Row>
+    </BaseGameText>
+
+	<LocalizedText>
+		<Row Tag="LOC_FT_WINDOW_TITLE" Language="zh_Hans_CN">
+			<Text>柜台</Text>
+		</Row>
+		<Row Tag="LOC_FT_ENTRY_BUTTON" Language="zh_Hans_CN">
+			<Text>贷款</Text>
+		</Row>
+		<Row Tag="LOC_FT_ENTRY_BUTTON_TOOLTIP" Language="zh_Hans_CN">
+			<Text>金融[NEWLINE][NEWLINE]发挥资本的力量，让您的帝国在混乱中迅速崛起。</Text>
+		</Row>
+		<Row Tag="LOC_FT_WINDOW_NOTE" Language="zh_Hans_CN">
+			<Text>当前可借金额：{1_Amount}[ICON_GoldLarge]</Text>
+		</Row>
+		<Row Tag="LOC_LOAN_TURNS_REMAIN" Language="zh_Hans_CN">
+			<Text>贷款到期剩余回合数</Text>
+		</Row>
+		<Row Tag="LOC_LOAN_AMOUNT_LABEL" Language="zh_Hans_CN">
+			<Text>贷款金额： </Text>
+		</Row>
+		<Row Tag="LOC_LOAN_PAYABLE_LABEL" Language="zh_Hans_CN">
+			<Text>应还：{1_Amount}[ICON_Gold][NEWLINE]平均每回合 {2_PerTurn} [ICON_Gold]</Text>
+		</Row>
+		<Row Tag="LOC_LOAN_LOAN_BUTTON" Language="zh_Hans_CN">
+			<Text>借款</Text>
+		</Row>
+		<Row Tag="LOC_LOAN_PAY_BUTTON" Language="zh_Hans_CN">
+			<Text>还款</Text>
+		</Row>
+		<Row Tag="LOC_LOAN_EARLY_REPAYMENT_TOOLTIP" Language="zh_Hans_CN">
+			<Text>提前还款可以按已借时长结算利息，意味着更低的利率</Text>
+		</Row>
+		<Row Tag="LOC_LOAN_NEW_LOAN_BUTTON" Language="zh_Hans_CN">
+			<Text>新增贷款</Text>
+		</Row>
+		<Row Tag="LOC_LOAN_INTEREST_RATES" Language="zh_Hans_CN">
+			<Text>利率</Text>
+		</Row>
+		<Row Tag="LOC_LOAN_INTEREST_LABEL" Language="zh_Hans_CN">
+			<Text>利息：</Text>
+		</Row>
+		<Row Tag="LOC_LOAN_INTEREST_RATES_TOOLTIP" Language="zh_Hans_CN">
+			<Text>贷款期限及其利率</Text>
+		</Row>
+		<Row Tag="LOC_USURIOUS_LOAN_TAB" Language="zh_Hans_CN">
+			<Text>发行国债</Text>
+		</Row>
+		<Row Tag="LOC_FREE_LOAN_TAB" Language="zh_Hans_CN">
+			<Text>无偿贷款</Text>
+		</Row>
+		<Row Tag="LOC_FREE_LOAN_NOTE" Language="zh_Hans_CN">
+			<Text>在本窗口办理的贷款不用归还，但是每当你获得一笔贷款时，其他玩家将会获得双倍的收入。</Text>
+		</Row>
+		<Row Tag="LOC_FREE_LOAN_OTHER_PLAYERS_RECEIVE" Language="zh_Hans_CN">
+			<Text>其他玩家分别获得 {1_Amount} [ICON_Gold]</Text>
+		</Row>
+		<Row Tag="LOC_VAM_TAB" Language="zh_Hans_CN">
+			<Text>对赌协议</Text>
+		</Row>
+		<Row Tag="LOC_VAM_NOTE" Language="zh_Hans_CN">
+			<Text>敬请期待……</Text>
+		</Row>
+		<Row Tag="LOC_LOAN_OVERDUE" Language="zh_Hans_CN">
+			<Text>已逾期</Text>
+		</Row>
+		<Row Tag="LOC_LOAN_ARREAR" Language="zh_Hans_CN">
+			<Text>欠款: {1_Amount}</Text>
+		</Row>
+		<Row Tag="LOC_FT_ACCOUNT_CANNOT_AFFORD" Language="zh_Hans_CN">
+			<Text>你的金币不够</Text>
+		</Row>
+		
+		<Row Tag="LOC_VICTORY_ECONOMY" Language="zh_Hans_CN">
+			<Text>经济胜利</Text>
+		</Row>
+		<Row Tag="LOC_VICTORY_ECONOMIC_SHORTNAME" Language="zh_Hans_CN">
+			<Text>经济</Text>
+		</Row>
+		<Row Tag="LOC_VICTORY_ECONOMY_BLURB" Language="zh_Hans_CN">
+			<Text>恭喜您获得：经济胜利</Text>
+		</Row>
+		<Row Tag="LOC_VICTORY_ECONOMY_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>尽可能地提高回合金，以获得经济胜利。</Text>
+		</Row>
+		<Row Tag="LOC_VICTORY_ECONOMIC_REQUIREMENT" Language="zh_Hans_CN">
+			<Text>谁先赚够10000[ICON_Gold]就赢。</Text>
+		</Row>
+	</LocalizedText>
+</GameData>

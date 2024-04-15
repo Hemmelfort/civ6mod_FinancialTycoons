@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Context>
+
+	
+    <!--
+      _    _                               _  __           _   
+     | |  | |                             | |/ _|         | |  
+     | |__| | ___ _ __ ___  _ __ ___   ___| | |_ ___  _ __| |_ 
+     |  __  |/ _ \ '_ ` _ \| '_ ` _ \ / _ \ |  _/ _ \| '__| __|
+     | |  | |  __/ | | | | | | | | | |  __/ | || (_) | |  | |_ 
+     |_|  |_|\___|_| |_| |_|_| |_| |_|\___|_|_| \___/|_|   \__|
+    2023.08
+    -->
+    <Label ID="MsgLabel" Size="parent,24" Offset="0,5" Anchor="C,T" Hidden="1"/>
+    
+    
+    <Container ID="MainContainer" Anchor="C,C" Size="780,400" Offset="0,0">
+        <Image ID="ModalBG" Size="parent,parent" Texture="Religion_BG" StretchMode="Tile" ConsumeMouse="1"/>
+        
+        <Grid Size="parent,40" Texture="Controls_SubHeader2" ConsumeMouse="1" SliceCorner="20,2" SliceTextureSize="40,40">
+          <Label ID="ScreenTitle" String="LOC_FT_WINDOW_TITLE" Anchor="C,C" Style="FontFlair22" FontStyle="glow" ColorSet="ShellHeader" />
+        </Grid>
+        
+        <Grid Offset="-8,-8" Size="parent+16,parent+16" Style="ScreenFrame"/>
+        
+        <Button ID="CloseButton" Anchor="R,T" Size="44,44" Texture="Controls_CloseLarge"/>
+    
+        <Tab ID="TabControl" Anchor="L,T" Size="parent-40, 280" Offset="0,40">
+            <Container ID="TabContainer" Size="parent,parent-40" Offset="0,0">
+                
+                <Grid ID="UsuriousLoan" Size="parent,parent" Offset="20,50" Texture="Religion_OverviewFrame" SliceCorner="15,15" >
+                    <Label ID="NoteLabel" Offset="20,20" WrapWidth="560" Style="FontNormal20" FontStyle="shadow" ColorSet="ShellHeader" />
+                    <GridButton ID="NewLoanButton" Size="200,36" Offset="20,12" String="LOC_LOAN_NEW_LOAN_BUTTON" Style="ButtonControl" Anchor="R,T"/>
+
+                    <ScrollPanel ID="InfoScrollPanel" Vertical="1" Size="parent-5,parent-100" AutoScrollBar="1" Anchor="L,T" Offset="3,55">
+                        <Stack ID="LoanInstanceStack" StackGrowth="Down" Padding="2"  Anchor="C,T" />
+                        <ScrollBar Style="Slider_Light" Anchor="R,C" Offset="2,0" />
+                    </ScrollPanel>
+                </Grid>
+                
+                <Grid ID="FreeLoan" Size="parent,parent" Offset="20,50" Texture="Religion_OverviewFrame" SliceCorner="15,15" >
+                    <Label ID="FreeLoanNote" Offset="20,20" WrapWidth="700" Style="FontNormal20" FontStyle="shadow" ColorSet="ShellHeader" String="LOC_FREE_LOAN_NOTE"/>
+                    <Label ID="FreeLoanAvailableAmount" Offset="20,80" WrapWidth="560" Style="FontNormal20" FontStyle="shadow" ColorSet="ShellHeader" />
+                    <AlphaAnim ID="FreeLoanMsgAlpha" AlphaBegin="1" AlphaEnd="0"  Pause="1" Speed="2" Cycle="Once" Size="parent,parent">
+                        <Label ID="FreeLoanMsg" Anchor="C,B" Offset="0,80" Style="FontNormal20"/>
+                    </AlphaAnim>
+
+                    <Container Size="parent-20,parent-20">
+                        <GridButton ID="FreeLoanButton1" Size="160,41" Offset="-220,0" String="100" Style="ButtonConfirm" Anchor="C,B"/>
+                        <GridButton ID="FreeLoanButton2" Size="160,41" Offset="-60,0" String="1000" Style="ButtonConfirm" Anchor="C,B"/>
+                        <GridButton ID="FreeLoanButton3" Size="160,41" Offset="100,0" String="5000" Style="ButtonConfirm" Anchor="C,B"/>
+                        <GridButton ID="FreeLoanButton4" Size="160,41" Offset="260,0" String="10000" Style="ButtonConfirm" Anchor="C,B"/>
+                    </Container>
+                    
+                </Grid>
+                
+                <Grid ID="VAMTab" Size="parent,parent" Offset="20,50" Texture="Religion_OverviewFrame" SliceCorner="15,15" >
+                    <Label ID="VAMNote" Offset="20,20" WrapWidth="560" Style="FontNormal20" FontStyle="shadow" ColorSet="ShellHeader" String="LOC_VAM_NOTE"/>
+
+                    <ScrollPanel ID="VAMScroll" Vertical="1" Size="parent-5,parent-60" AutoScrollBar="1" Anchor="L,T" Offset="3,55">
+                        <Stack ID="VAMInstanceStack" StackGrowth="Down" Padding="2"  Anchor="C,T" />
+                        <ScrollBar Style="Slider_Light" Anchor="R,C" Offset="2,0" />
+                    </ScrollPanel>
+                </Grid>
+            </Container>
+            
+                
+            <!--Tab Buttons-->
+            <Stack ID="TabButtons" Anchor="C,T" Offset="0,0" StackGrowth="Right">
+                <GridButton ID="SelectTab_UsuriousLoan" Style="TabButton" Size="150,35">
+                    <Label Style="FontFlair14" String="LOC_USURIOUS_LOAN_TAB" Anchor="C,C" FontStyle="stroke" ColorSet="TopBarValueCS"/>
+                </GridButton>
+                <GridButton ID="SelectTab_FreeLoan" Style="TabButton" Size="150,35">
+                    <Label Style="FontFlair14" String="LOC_FREE_LOAN_TAB" Anchor="C,C" FontStyle="stroke" ColorSet="TopBarValueCS"/>
+                </GridButton>
+                <GridButton ID="SelectTab_VAMTab" Style="TabButton" Size="150,35">
+                    <Label Style="FontFlair14" String="LOC_VAM_TAB" Anchor="C,C" FontStyle="stroke" ColorSet="TopBarValueCS"/>
+                </GridButton>
+            </Stack>
+        </Tab>
+    
+        <Button ID="TestButton1" Size="58,58" Offset="20,8" Texture="Controls_CircleButton" Anchor="L,B" String="T" Hidden="1"/>
+        <Button ID="TestButton2" Size="58,58" Offset="80,8" Texture="Controls_CircleButton" Anchor="L,B" String="F" Hidden="1"/>
+        <Button ID="TestButton3" Size="58,58" Offset="140,8" Texture="Controls_CircleButton" Anchor="L,B" String="S" Hidden="1"/>
+        <GridButton ID="BackButton" Size="200,48" Offset="20,8" String="LOC_HUD_CLOSE" Style="ButtonRed" Anchor="C,B"/>
+    </Container>
+    
+
+
+
+
+    <Instance Name="LoanInstance">
+        <Container ID="Root" Size="parent,50">
+            <Box Color="62,152,203,20" Anchor="L,B" Size="parent,parent">
+                <Stack StackGrowth="Right" Anchor="L,C">                
+                    <Image Texture="Controls_CircleCompass" Size="52,53" Color="ShellControl">
+                        <Label ID="TurnsRemain" Style="FontFlair20" String="-" Anchor="C,C" FontStyle="stroke" Color0="208,212,217,255" Color1="0,0,0,50" ToolTip="LOC_LOAN_TURNS_REMAIN"/>
+                    </Image>
+                    
+                    <SimplePullDown ID="PullDown" Anchor="R,C" Offset="0,0" Style="PullDownBlue" ScrollThreshold="400" Size="150,32" SpaceForScroll="0" EntryInstance="InstanceOne" ToolTip="LOC_LOAN_INTEREST_RATES_TOOLTIP"/>
+                    
+                    <Stack StackGrowth="Down" Anchor="L,C">
+                        <Label ID="AmountTitle" Style="FontFlair16" Anchor="L,C" String="LOC_LOAN_AMOUNT_LABEL" Color0="208,212,217,255" Color1="0,0,0,50"/>
+                        <Label ID="NumberDisplay" Style="FontFlair24" String="0" Anchor="L,C" FontStyle="stroke" ColorSet="ResGoldLabelCS"/>
+                    </Stack>
+                    
+                    <Stack StackGrowth="Down" Anchor="L,C">
+                        <Stack StackGrowth="Right">
+                            <Slider ID="AmountSlider" Style="SliderControl" Size="240,18" Anchor="L,T"/>
+                            <Label ID="ArrearLabel" Style="FontFlair16" String="ArrearLabel" Anchor="C,C" FontStyle="stroke" ColorSet="RoyaleButtonCS"/>
+                        </Stack>
+                    
+                        <Stack StackGrowth="Right">
+                            <Label ID="PayableLabel" Style="FontFlair14" Anchor="L,C" String="LOC_LOAN_INTEREST_LABEL"/>
+                            <Label ID="InterestLabel" Style="FontFlair14" Anchor="L,C" ColorSet="ResGoldLabelCS"/>
+                            <Label String="[ICON_Gold]"/>
+                        </Stack>
+                    </Stack>
+                    
+                    <Label ID="OverdueLabel" Style="FontFlair16" String="LOC_LOAN_OVERDUE" Anchor="C,C" FontStyle="stroke" ColorSet="RoyaleButtonCS" Hidden="1"/>
+                </Stack>
+            </Box>
+
+            <GridButton ID="LoanButton" Style="ButtonControlTan" Size="80,32" FontStyle="Stroke" ColorSet="PiratesButtonCS" String="LOC_LOAN_LOAN_BUTTON" Anchor="R,C" Offset="80,0"/>
+            <GridButton ID="PayButton" Style="ButtonControl" Size="80,32" FontStyle="Stroke" ColorSet="ButtonCS" String="LOC_LOAN_PAY_BUTTON" Anchor="R,C" ToolTip="LOC_LOAN_EARLY_REPAYMENT_TOOLTIP"/>
+        </Container>
+    </Instance>
+
+    <Instance Name="EntryButtonInstance">
+        <GridButton ID="Button" Size="160,34" Style="TabButton" FontSize="14" TextOffset="0,2" String="LOC_FT_ENTRY_BUTTON">
+            <AlphaAnim ID="Selection" Offset="-2,0" Size="parent+3,parent" Speed="4" AlphaBegin="0" AlphaEnd="1" Cycle="Once" Function="Root" Hidden="1" >
+                <GridButton Size="parent,parent" Style="TabButtonSelected" ConsumeMouseButton="0" ConsumeMouseOver="1" />
+            </AlphaAnim>
+        </GridButton>
+    </Instance>
+    
+    
+
+    <Instance Name="LaunchBarItem">
+    <Button ID="LaunchItemButton" Anchor="L,C" Size="49,49" Texture="LaunchBar_Hook_GreatWorksButton" Style="ButtonNormalText" TextureOffset="0,2" StateOffsetIncrement="0,49" ToolTip="LOC_FT_ENTRY_BUTTON_TOOLTIP">
+    <Image ID="LaunchItemIcon" Texture="FTEntryIcon.dds" Size="35,35" Anchor="C,C" Offset="0,-1" Hidden="0"/>
+    <Label ID="IconAlter" String="[ICON_CapitalLarge]" Anchor="C,C" Offset="0,0" Hidden="1"/>
+    <Label ID="AlertIndicator" String="[ICON_New]" Anchor="R,T" AnchorSide="O,O" Offset="-18,-18" Hidden="1"/>
+    </Button>
+    </Instance>
+    
+    <Instance Name="LaunchBarPinInstance">
+    <Image ID="Pin" Anchor="L,C" Offset="0,-2" Size="7,7" Texture="LaunchBar_TrackPip" Color="255,255,255,200"/>
+    </Instance>
+    
+
+</Context>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context>
+
+	<!--<Include File="CivilizationIcon"/> -->
+	
+	<Stack ID="EcoViewStack" Offset="0,5" Padding="5"/>
+
+    <Instance Name="EconomicVictoryInstance">
+        <GridButton	ID="ButtonBG" Size="470,51" Texture="Controls_ListButton" SliceCorner="209,29" SliceTextureSize="417,51">
+        
+            <Container>
+                <Grid ID="LocalPlayer" Offset="-7,-5" Size="parent+14,parent+9" Texture="Controls_YouIndicatorLine" SliceCorner="28,42" SliceSize="2,1" SliceTextureSize="60,60"/>
+                <Label ID="CivName" Size="150,18" Offset="55,18" String="CivName" Style="FontNormal18" FontStyle="shadow" Color="206,218,225,255" EffectColor="0,0,0,191"/>
+                <Label ID="CivNameUnknow" Size="150,18" Offset="55,18" String="CivName" Style="FontNormal18" FontStyle="shadow" Color="206,218,225,255" EffectColor="0,0,0,191"/>
+                <!--<MakeInstance Name="CivilizationIcon44" ID="CivilizationIcon" Anchor="L,C" Offset="8,26"/> -->
+                
+                <Image ID="CivIconBackground" Size="36,36" Texture="CircleBacking36" Anchor="L,C" Offset="8,26">
+                    <Image ID="CivIconUnknow" Size="36,36" Texture="CivSymbols36"/>
+                    <Image ID="CivIcon" Size="36,36" Texture="CivSymbols36"/>
+                </Image>
+            </Container>
+
+            <Label ID="IncomeLabel" Style="FontFlair24" String="0" Anchor="R,C" Offset="15,0" FontStyle="stroke" ColorSet="ResGoldLabelCS"/>
+        </GridButton>
+    </Instance>
+    
+</Context>

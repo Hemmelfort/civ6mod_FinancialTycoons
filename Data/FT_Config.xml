@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<GameData>
+	<Victories>
+		<Row Domain="StandardVictories" VictoryType="VICTORY_ECONOMIC" Name="LOC_VICTORY_ECONOMIC_NAME" Description="LOC_VICTORY_ECONOMIC_DESCRIPTION" Icon="ICON_VICTORY_UNIVERSAL"/>
+		<Row Domain="Expansion2_Victories" VictoryType="VICTORY_ECONOMIC" Name="LOC_VICTORY_ECONOMIC_NAME" Description="LOC_VICTORY_ECONOMIC_DESCRIPTION" Icon="ICON_VICTORY_UNIVERSAL"/>
+	</Victories>
+
+</GameData>

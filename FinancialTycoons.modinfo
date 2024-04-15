@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Mod id="04190FFA-B753-44F1-AAFE-D7C815335E71" version="2">
+	<Properties>
+		<Name>LOC_MOD_FINANCIAL_TYCOONS_NAME</Name>
+		<Teaser>LOC_MOD_FINANCIAL_TYCOONS_TEASER</Teaser>
+		<Description>LOC_MOD_FINANCIAL_TYCOONS_DESCRIPTION</Description>
+		<Authors>HEMMELFORT</Authors>
+		<AffectsSavedGames>0</AffectsSavedGames>
+		<CompatibleVersions>2.0</CompatibleVersions>
+	</Properties>
+	<Settings>
+        <UpdateDatabase id="FT_CONFIG">
+            <File>Data/FT_Config.xml</File>
+        </UpdateDatabase>
+        <UpdateText id="FT_CONFIG_TEXT">
+            <File>Text/FT_ConfigText.xml</File>
+        </UpdateText>
+	</Settings>
+	<Components>
+        <UpdateDatabase id="FT_DATABASE">
+            <File>Data/FT_GameplayData.xml</File>
+        </UpdateDatabase>
+		<AddGameplayScripts id="FT_SCRIPTS">
+			<File>Scripts/FT_Gameplay.lua</File>
+		</AddGameplayScripts>
+        <AddUserInterfaces id="FT_UI">
+            <Properties>
+                <Context>InGame</Context>
+            </Properties>
+            <File>UI/FT_Counter.xml</File>
+            <File>UI/FT_Victories.xml</File>
+        </AddUserInterfaces>
+        <UpdateText id="FT_INGAME_TEXT">
+            <File>Text/FT_InGameText.xml</File>
+        </UpdateText>
+		<ImportFiles id="FT_FILES">
+			<File>Textures/FTEntryIcon.dds</File>
+		</ImportFiles>
+	</Components>
+	<Files>
+        <File>Data/FT_Config.xml</File>
+        <File>Data/FT_GameplayData.xml</File>
+		<File>Scripts/FT_Gameplay.lua</File>
+		<File>Text/FT_InGameText.xml</File>
+		<File>Text/FT_ConfigText.xml</File>
+		<File>UI/FT_Counter.xml</File>
+		<File>UI/FT_Counter.lua</File>
+		<File>UI/FT_Victories.lua</File>
+		<File>UI/FT_Victories.xml</File>
+		<File>Textures/FTEntryIcon.dds</File>
+	</Files>
+	<LocalizedText>
+		<Text id="LOC_MOD_FINANCIAL_TYCOONS_NAME">
+			<zh_Hans_CN>金融大亨</zh_Hans_CN>
+			<en_US>Financial Tycoons</en_US>
+		</Text>
+		<Text id="LOC_MOD_FINANCIAL_TYCOONS_TEASER">
+			<zh_Hans_CN>包含一些新的金融工具</zh_Hans_CN>
+			<en_US>Financial Tycoons</en_US>
+		</Text>
+		<Text id="LOC_MOD_FINANCIAL_TYCOONS_DESCRIPTION">
+			<zh_Hans_CN>此mod增加了贷款的功能，让玩家在前期便能获得更多的启动资金。</zh_Hans_CN>
+			<en_US>This mod provides loan services, allowing players to receive more start-up funds in the early stages.</en_US>
+		</Text>
+	</LocalizedText>
+</Mod>
